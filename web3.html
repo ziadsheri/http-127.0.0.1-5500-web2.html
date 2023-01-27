@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Random Discount Selection</title> 
+</head> 
+<body> 
+
+<h1>Welcome to our Diwan Exclusive Discount Selection</h1> 
+
+<p>Click the button to randomly select a discount from 5-15% and see your win discount</p> 
+
+<form> 
+<input type="button" value="Select Discount" onclick="displayDiscount()"> 
+<br><br> 
+<p id="discount-display"></p> 
+</form> 
+
+<script> 
+function displayDiscount() { 
+var x = Math.floor(Math.random() * (16 - 5)) + 5; 
+document.getElementById("discount-display").innerHTML = "Congratulations! You have won a " + x + "% discount. Thank you for choosing us!"; 
+} 
+</script> 
+
+</body> 
+</html> 
